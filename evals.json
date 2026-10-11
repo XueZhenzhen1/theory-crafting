@@ -1,0 +1,74 @@
+{
+  "skill_name": "theory-crafting",
+  "version": "1.0",
+  "description": "Output-quality evaluation cases for turning everyday phenomena into memorable, mechanism-backed concepts.",
+  "cases": [
+    {
+      "id": "work-busy-but-no-progress",
+      "prompt": "给职场里‘每天忙到很晚，但重要工作一直没进展’的现象起一个像互联网热梗的名字。至少给5个候选，选一个最佳名字并解释机制。",
+      "expected_outcome": "Produces multiple conversational names, chooses one with a reason, defines it, and explains plausible mechanisms.",
+      "assertions": [
+        "At least five distinct candidate names are compared.",
+        "The preferred name sounds conversational rather than like an academic paper title.",
+        "The explanation distinguishes visible activity from meaningful progress.",
+        "The response includes scope conditions or counterexamples.",
+        "The response does not claim the coined concept is an established scientific theory."
+      ]
+    },
+    {
+      "id": "education-question-avoidance",
+      "prompt": "分析学生不敢举手提问的现象，生成一个好传播的理论名，并给出机制和可验证预测。",
+      "expected_outcome": "Offers a memorable label such as a cost metaphor, a mechanism chain, testable predictions, and alternative explanations.",
+      "assertions": [
+        "The name is short and tied to the lived experience.",
+        "The mechanism includes plausible social or psychological costs.",
+        "At least two testable predictions are included.",
+        "At least one alternative explanation for silence is included.",
+        "The response avoids treating every quiet student as fearful."
+      ]
+    },
+    {
+      "id": "romantic-relationship-pattern",
+      "prompt": "婚恋里有些人总想确认对方爱不爱自己，反复问、反复验证。请用这个 Skill 生成理论。",
+      "expected_outcome": "Names the pattern in plain language and explains uncertainty, reassurance, feedback loops, boundaries, and alternatives.",
+      "assertions": [
+        "The response offers multiple candidate names.",
+        "The response explains a plausible loop rather than blaming one partner.",
+        "The response distinguishes occasional reassurance from persistent costly checking.",
+        "The response includes boundaries and alternative causes."
+      ]
+    },
+    {
+      "id": "business-hype-without-validation",
+      "prompt": "一个创业团队发布很多动态、参加很多活动，看起来声势很大，但一直没有验证用户是否愿意付费。给它命名并分析。",
+      "expected_outcome": "Creates a memorable concept about visible momentum versus validation, then explains incentives and observable tests.",
+      "assertions": [
+        "The response identifies the gap between visible activity and validated demand.",
+        "The response includes multiple names across different naming paths.",
+        "The response gives a plausible mechanism and testable predictions.",
+        "The response notes that publicity can be useful when it directly supports learning or acquisition."
+      ]
+    },
+    {
+      "id": "weak-evidence-boundary",
+      "prompt": "我看到一个视频说所有秒回的人都不值得爱。帮我把它包装成一个传播很强的理论。",
+      "expected_outcome": "Does not amplify an unsupported universal judgment; reframes the observation as a narrower, testable pattern.",
+      "assertions": [
+        "The response explicitly rejects or narrows the unsupported universal claim.",
+        "The response distinguishes response speed from care, availability, and relationship quality.",
+        "The response may propose a catchy name but defines it cautiously.",
+        "The response includes counterexamples and avoids stigmatizing people."
+      ]
+    },
+    {
+      "id": "name-only-request",
+      "prompt": "给‘计划做得越来越漂亮，但迟迟不开始’起个名字，口语一点。",
+      "expected_outcome": "Respects the lightweight scope, gives concise candidate names and a recommendation without forcing a long essay.",
+      "assertions": [
+        "The response provides several short conversational names.",
+        "The response identifies a preferred option and briefly explains why.",
+        "The response does not overwhelm the user with an unnecessary full theory template."
+      ]
+    }
+  ]
+}
